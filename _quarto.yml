@@ -26,6 +26,9 @@ website:
       # - href: https://www.gradescope.com/courses/1208262
       #   text: Gradescope
   google-analytics: "G-63SKKDGFHG"
+  # Pages with `draft: true` in their front matter are left out of the
+  # rendered site and search (they still show up in `quarto preview`)
+  draft-mode: gone
     # tools:
     #   - icon: linkedin
     #     href: https://twitter.com

@@ -2,6 +2,7 @@
 title: Duke Compute Cluster Guide
 subtitle: Python / Jupyter Notebook Guide for the Duke Compute Cluster (DCC)
 author: Rakeen Rouf
+draft: true
 toc: true
 toc-expand: 2
 number-sections: true
