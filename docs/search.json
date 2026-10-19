@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "Software and Hardware Tools",
+    "section": "",
+    "text": "We will use Python 3.x. The Anaconda distribution is recommended and comes with the most common packages. Python continues to be an one of the top programming languages and the rich packages in the language make it an excellent choice for machine learning. In particular the Python ecosystem of packages makes it a natural choice for ML including core numerical programming and plotting libraries like numpy, scipy, matplotlib, and pandas as well as excellent packages for machine learning algorithm development and statistical modeling including Scikit-Learn, Keras, and Pytorch."
+  },
+  {
+    "objectID": "tools.html#programming-language-python",
+    "href": "tools.html#programming-language-python",
+    "title": "Software and Hardware Tools",
+    "section": "",
+    "text": "We will use Python 3.x. The Anaconda distribution is recommended and comes with the most common packages. Python continues to be an one of the top programming languages and the rich packages in the language make it an excellent choice for machine learning. In particular the Python ecosystem of packages makes it a natural choice for ML including core numerical programming and plotting libraries like numpy, scipy, matplotlib, and pandas as well as excellent packages for machine learning algorithm development and statistical modeling including Scikit-Learn, Keras, and Pytorch."
+  },
+  {
+    "objectID": "tools.html#development-environments-vs-code-and-jupyter-notebooks",
+    "href": "tools.html#development-environments-vs-code-and-jupyter-notebooks",
+    "title": "Software and Hardware Tools",
+    "section": "Development environments: VS Code and Jupyter Notebooks",
+    "text": "Development environments: VS Code and Jupyter Notebooks\nJupyter lab or Jupyter notebook will be appropriate for most class assignments. We highly encourage you to use Visual Studio Code, in particular due to the debugging capabilities. There are many configurations that may work for you, but I would recommend begin by gathering ideas in Jupyter Notebooks. Once you have the basic structure of your code worked out, consider moving it to a .py file to make it easier and cleaner to run and build on.\nIf you could use help getting started or a refresher on Jupyter notebooks, check out this video for more on basic Jupyter functionality. Using Jupyter notebooks allows you to practice applying machine learning concepts while building programming and writing skills, strengthening your ability to both create creative solutions to machine learning challenges while simultaneously enhancing your ability to communicate the meaning behind your findings and why others should give credence to your results. You’re encouraged to use VS Code to interact with Jupyter Notebooks."
+  },
+  {
+    "objectID": "tools.html#graphics-processing-units-gpus",
+    "href": "tools.html#graphics-processing-units-gpus",
+    "title": "Software and Hardware Tools",
+    "section": "Graphics processing units (GPUs)",
+    "text": "Graphics processing units (GPUs)\nGPUs are the workhorses of many modern machine learning algorithms, especially any that involve neural network-based architectures. There will be a small number of assignments that will require additional computation that would benefit from GPUs. For these there are several options:\n\nDuke Compute Cluster. This server provides on-demand access to GPUs for computation through a centralized Duke server. You have access to this resource for the semester. Further instructions are available here.\nGoogle Colab, which is a free notebook environment that enables access to cloud resources including GPUs. For longer sessions before timeouts, greater RAM, and better GPUs you can optionally upgrade to Colab Pro.\nWe will also be making a limited number of Azure cloud credits available to students later in the semester by request if neither of the above resources meets your needs."
+  },
+  {
+    "objectID": "tools.html#version-control-via-git",
+    "href": "tools.html#version-control-via-git",
+    "title": "Software and Hardware Tools",
+    "section": "Version Control via Git",
+    "text": "Version Control via Git\nGit is efficient for collaboration, and expectation in industry, and one of the best ways to share results in academia. You can even use some Git repositories (e.g. Github) as hosts for website, such as with the course website. As a data scientist with experience in machine learning, Git is expected. We will interact with Git repositories (a.k.a. repos) throughout this course, and your project will require the use of git repos for collaboration.\nComplete the Atlassian Git tutorial, specifically the following listed sections. Try each concept that’s presented. For this tutorial, instead of using BitBucket as your remote repository host, you may use your preferred platform such as Github or Duke’s Gitlab. 1. What is version control 2. What is Git 3. Install Git 4. Setting up a repository 5. Saving changes 6. Inspecting a repository 7. Undoing changes 8. Rewriting history 9. Syncing 10. Making a pull request 11. Using branches 12. Comparing workflows\nI also have created two videos on the topic to help you understand some of these concepts: Git basics and a step-by-step tutorial.\nAs an additional resource, Microsoft now offers a git tutorial on this topic as well.\nFor your answer, affirm that you either completed the tutorials above OR have previous experience with ALL of the concepts above. Confirm this by typing your name below and selecting the situation that applies from the two options in brackets."
+  },
+  {
+    "objectID": "resources/dcc-documentation.html",
+    "href": "resources/dcc-documentation.html",
+    "title": "Duke Compute Cluster Guide",
+    "section": "",
+    "text": "This guide walks you through setting up and running Python and Jupyter Notebook on the DCC, managing environments, and submitting GPU jobs using Slurm (Simple Linux Utility for Resource Management)."
+  },
+  {
+    "objectID": "resources/dcc-documentation.html#one-time-setup-steps-first-time-only",
+    "href": "resources/dcc-documentation.html#one-time-setup-steps-first-time-only",
+    "title": "Duke Compute Cluster Guide",
+    "section": "1 One-Time Setup Steps (First Time Only!)",
+    "text": "1 One-Time Setup Steps (First Time Only!)\n\n1.1 Familiarize yourself with the available file systems on the DCC.\n\nOverview: Duke Compute Cluster\n\n\n\n1.2 SSH into the DCC.\nLog into the cluster using your NetID.\nCommand:\nssh {your_netID}@dcc-login.oit.duke.edu\n(Example)\n\n\n\n1.3 Create a symbolic link to the course26 directory.\nThe coursess26 directory has 1 Terabyte of shared storage space for the course. A symbolic link is a shortcut to another file system. When you first login, you will be in your home directory, create your shortcuts there.\nCommand:\nln -s /hpc/group/coursess26 ids705\nTo verify that the symbolic link has been created correctly, you should see the ids705 folder in the home directory pointing to the /hpc/group/coursess26 directory by using a command such as:\nls -lrth\n(Example)\n\n\n\n1.4 Download and Install Miniconda.\nExecute the following commands in your terminal and follow the instructions. Log out (close the terminal) and log back in upon successful installation, to being using Miniconda.\nCommands:\nwget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh\nsh Miniconda3-latest-Linux-x86_64.sh"
+  },
+  {
+    "objectID": "resources/dcc-documentation.html#managing-python-environments",
+    "href": "resources/dcc-documentation.html#managing-python-environments",
+    "title": "Duke Compute Cluster Guide",
+    "section": "2 Managing Python Environments",
+    "text": "2 Managing Python Environments\n\n2.1 Create a new environment.\nCommand:\nconda create -n {name_of_environment} python={Python.Version}\n(Example)\n\n\n\n2.2 View available Conda environments.\nCommand:\nconda env list\n(Example)\n\n\n\n2.3 Activate the environment.\nCommand:\nconda activate {name_of_environment}\n(Example)\n\n\n\n2.4 Install Jupyter kernel and test installation.\nCommands:\nconda install ipykernel\n(Example)\n\npython -m ipykernel install --user --name test\n(Example)"
+  },
+  {
+    "objectID": "resources/dcc-documentation.html#accessing-jupyter-lab-via-dcc-ondemand-portal",
+    "href": "resources/dcc-documentation.html#accessing-jupyter-lab-via-dcc-ondemand-portal",
+    "title": "Duke Compute Cluster Guide",
+    "section": "3 Accessing Jupyter Lab via DCC OnDemand Portal",
+    "text": "3 Accessing Jupyter Lab via DCC OnDemand Portal\n\n3.1 Login at DCC OnDemand.\n\n\n3.2 Click on Jupyter Lab.\n\n\n\n3.3 Configure session resources:\n\nPartition: courses-gpu (for GPU) or courses (no GPU).\n\nGPUs: 1 (if needed) or 0.\n\nCPUs: Up to 40.\n\nMemory: Up to 208 GB.\n\nAdditional Slurm Parameters:\n--gres=gpu:1\n\n\n\n\n3.4 Launch the session and wait for the status to change to “Running”.\n\n\n3.5 Click the Connect to Jupyter button to access the server.\n\n\n\n3.6 Start your notebook by selecting your preferred kernel."
+  },
+  {
+    "objectID": "resources/dcc-documentation.html#gpu-demonstration-on-jupyter-lab",
+    "href": "resources/dcc-documentation.html#gpu-demonstration-on-jupyter-lab",
+    "title": "Duke Compute Cluster Guide",
+    "section": "4 GPU Demonstration on Jupyter Lab",
+    "text": "4 GPU Demonstration on Jupyter Lab\n\n4.1 Activate the previously created Conda environment.\nIn your terminal, activate the previously created “test” Conda environment. You can access a terminal in this session by clicking the blue plus button and selecting terminal in the now open launcher window (You can also use your ssh terminal).\nCommand:\nconda activate test\n\n\n\n4.2 Install required packages.\nCommands:\nconda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y\nconda install matplotlib\n\n\n\n\n4.3 Open and run the notebook:\nLocation: ids_705_storage/demo/gpu_demo.ipynb.\n\nImportant: Restart the kernel to ensure all installed packages are available.\n\n\n\nExpected Output: Ensure the first line of output says “Using GPU!!”.\n\n\n.\n."
+  },
+  {
+    "objectID": "resources/dcc-documentation.html#gpu-demonstration-using-slurm-scheduler-preferred-method-to-run-longer-jobs",
+    "href": "resources/dcc-documentation.html#gpu-demonstration-using-slurm-scheduler-preferred-method-to-run-longer-jobs",
+    "title": "Duke Compute Cluster Guide",
+    "section": "5 GPU Demonstration Using Slurm Scheduler (Preferred method to run longer jobs)",
+    "text": "5 GPU Demonstration Using Slurm Scheduler (Preferred method to run longer jobs)\nSlurm (Simple Linux Utility for Resource Management) is a powerful workload manager and job scheduler designed for high-performance computing (HPC) clusters. It enables efficient resource allocation by managing compute nodes, CPUs, GPUs, memory, and job priorities across multiple users.\nIn this tutorial, we’ll focus on using Slurm to submit GPU jobs to Duke’s Compute Cluster (DCC). You’ll learn how to create and submit job scripts, specify resources like GPUs, CPUs, and memory.\n\n5.1 (Optional) If you want to run the demo yourself start by navigating to the demo directory.\nCommand:\ncd ids_705_storage/demo/data\n\n\n\n5.2 Create your Python script (demo script: ids_705_storage/demo/data/test.py).\n\n\n\n5.3 Create the Slurm file (demo file: ids_705_storage/demo/test_cuda.slurm).\n\n\n\n5.4 Submit your Slurm job.\nCommand:\nsbatch test_cuda.slurm\n\n\n\n5.5 Monitor job status.\nCommand:\nsqueue -u {your_id}\n\n\n\n5.6 Check job output (Wait for JobID to dissapear from above).\nCommand:\ncat test_cuda_{your_job_id}.out\n\nExpected Output:Ensure the first line of the output says “Using GPU”.\n\n\n.\n."
+  },
+  {
+    "objectID": "resources/dcc-documentation.html#final-notes",
+    "href": "resources/dcc-documentation.html#final-notes",
+    "title": "Duke Compute Cluster Guide",
+    "section": "6 Final Notes",
+    "text": "6 Final Notes\n\nCreate a personal directory under: /hpc/group/coursess26/ids705 and name it after your NetID.\n\nBe mindful of shared resources and job submissions.\n\nQuestions? Contact: paul.markakis@duke.edu.\n\nVisit Duke Compute Cluster for more information.\n\nIf resources are busy, set GPUs to 0 and ensure your code works on CPU (see demo code for an example).\n\n\n\n6.1 Shared Access & Permissions\n\nThe DCC is an open cluster built for the purpose of research and collaboration.\nAccess to the /hpc/group/coursess26/ids705 directory is shared across all IDS705 students and staff.\nAnything that you need to store privately should be stored in your home directory (all DCC users have 25GB of home space at /hpc/home/&lt;netID&gt;)."
+  },
+  {
+    "objectID": "pedagogy.html",
+    "href": "pedagogy.html",
+    "title": "Pedagogy",
+    "section": "",
+    "text": "Tenet #1: Good learning is active learning\nEveryone who was good at something was once bad at it. Learning comes from practice. No amount of reading or video/lecture watching alone will help you to become good without actively engaging with the material through practice. That is why this entire course is focused on supporting you to actively apply machine learning techniques through the assignments, quizzes, and project.\n\n\nTenet #2: Desirable difficulty leads to meaningful learning\nLearning is most effective when there’s a degree of struggle with the material. “Requiring students to organize new information and to work harder in the initial learning period can lead to greater and deeper learning. Although this struggle, dubbed a desirable difficulty…may at first be frustrating to learner and teacher alike, ultimately it improves long-term retention” (Excerpt from A Concise Guide to Improving Student Learning: Six Evidence-Based Principles and How to Apply Them). Desirable difficulties help you build connections between concepts and learn representations of knowledge (meta-cognition) that, like an index of a book, will increase your ability to creatively connect concepts and think more deeply about the topic.\n\n\nTenet #3: Read, reflect, recall is a pattern for effective learning\nSpaced retrieval and reflection is a key to effective learning. When we learn something, if we don’t use it, the knowledge fades. However, if we return to the material, apply it, create with it, we’re increasing the probability of long-term learning. This is why you will interact with each concept typically 4 times: lectures, readings, quizzes, and assignments, and at least one more time for those concepts involved in the final project. An added benefit of the frequent reflection through quizzes is that it tests your knowledge regularly, helping us to avoid the illusion of knowledge (thinking we know something, when we actually do not).\nReferences\nBrown, P.C., Roediger III, H.L. and McDaniel, M.A., 2014. Make it stick: The science of successful learning. Harvard University Press.\nPersellin, D.C. and Daniels, M.B., 2023. A concise guide to improving student learning: Six evidence-based principles and how to apply them. Taylor & Francis.",
+    "crumbs": [
+      "Syllabus",
+      "Pedagogy"
+    ]
+  },
+  {
+    "objectID": "contacts.html",
+    "href": "contacts.html",
+    "title": "Instructional Team",
+    "section": "",
+    "text": "Contact Us & Office Hours\n\n\n\nReach out to us through Ed Discussions for any questions. Office hours are also posted on Ed.\n\n\n\nInstructor\n\n\n\nKyle Bradbury (, )\n\n\nDr. Kyle Bradbury develops and applies machine learning techniques to better understand and manage energy and climate resources. His work focuses on how to advance machine learning methodologies and apply them to solve energy and climate system challenges through the development of open source, widely-applicable computational tools. His current research interests include developing scalable computer vision techniques for assessing energy resources, infrastructure, and access globally through the use of publicly available remote sensing data. Methodologically, he investigates how to overcome the challenge of distribution shift in computer vision through novel training paradigms that require less labeled data.\n\n\nTeaching Assistants\nComing soon!",
+    "crumbs": [
+      "Syllabus",
+      "Instructional Team"
+    ]
+  },
+  {
+    "objectID": "ai.html",
+    "href": "ai.html",
+    "title": "Effective Use of AI",
+    "section": "",
+    "text": "This class is all about artificial intelligence, however, the primary intelligence that we are working to expand is your own. AI tools, like ChatGPT, can be useful aids for learning, but without considering your relationship with these tools, they can present several major challenges to your learning:\n\nThe Illusion of Knowledge. Without careful use, you can easily succomb to the cognitive bias known as the illusion of knowledge. The illusion of knowledge, also known as the Dunning-Kruger effect, occurs when you believe you know something to a greater degree than you actually do. It’s better to evaluate yourself accurately in your knowledge of a subject so that you can seek out resources for filling the gaps in your knowledge. This can lead to poor decision making and overconfidence in those poor decisions. It also prevents further learning.\nPreventing actual learning. Using an AI to avoid the cognitive struggle of thinking through the material literally prevents you from learning since those cognitive struggles are part of the learning process. If your goal is to learn in this course, over-reliance on AI is a clear path to\nReduced potential for creativity and innovation. Getting too used to the habit of relying on AI weakens your critical thinking abilities and creativity. When you depend on AI to generate ideas or solve problems, you miss out on the opportunity to develop your own innovative solutions and original thoughts. This can stifle your creative growth and limit your ability to think independently.\nGetting it wrong. AI is fallible. As we see in this course, even the best trained systems aren’t 100% correct, so without the proper knowledge to evaluate AI output, over-reliance on AI sets you up for getting it wrong.\n\n\n\n\n\n\n\nNote\n\n\n\nFor more on this topic, see this presentation on the science of learning and how to effectively integrate AI."
+  },
+  {
+    "objectID": "ai.html#the-challenges-of-ai-use",
+    "href": "ai.html#the-challenges-of-ai-use",
+    "title": "Effective Use of AI",
+    "section": "",
+    "text": "This class is all about artificial intelligence, however, the primary intelligence that we are working to expand is your own. AI tools, like ChatGPT, can be useful aids for learning, but without considering your relationship with these tools, they can present several major challenges to your learning:\n\nThe Illusion of Knowledge. Without careful use, you can easily succomb to the cognitive bias known as the illusion of knowledge. The illusion of knowledge, also known as the Dunning-Kruger effect, occurs when you believe you know something to a greater degree than you actually do. It’s better to evaluate yourself accurately in your knowledge of a subject so that you can seek out resources for filling the gaps in your knowledge. This can lead to poor decision making and overconfidence in those poor decisions. It also prevents further learning.\nPreventing actual learning. Using an AI to avoid the cognitive struggle of thinking through the material literally prevents you from learning since those cognitive struggles are part of the learning process. If your goal is to learn in this course, over-reliance on AI is a clear path to\nReduced potential for creativity and innovation. Getting too used to the habit of relying on AI weakens your critical thinking abilities and creativity. When you depend on AI to generate ideas or solve problems, you miss out on the opportunity to develop your own innovative solutions and original thoughts. This can stifle your creative growth and limit your ability to think independently.\nGetting it wrong. AI is fallible. As we see in this course, even the best trained systems aren’t 100% correct, so without the proper knowledge to evaluate AI output, over-reliance on AI sets you up for getting it wrong.\n\n\n\n\n\n\n\nNote\n\n\n\nFor more on this topic, see this presentation on the science of learning and how to effectively integrate AI."
+  },
+  {
+    "objectID": "ai.html#why-do-i-need-to-learn-material-if-anyone-can-get-the-answer-with-ai",
+    "href": "ai.html#why-do-i-need-to-learn-material-if-anyone-can-get-the-answer-with-ai",
+    "title": "Effective Use of AI",
+    "section": "Why do I need to learn material if anyone can get the answer with AI?",
+    "text": "Why do I need to learn material if anyone can get the answer with AI?\nLearning the basics helps us to build out abstractions in our minds. For example, when I talk about a “computer” you know what I’m saying, comprehension doesn’t require me to explicitly state that I’m talking about “an electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program.” This is because you’ve already learned what a computer is - you’ve developed that abstraction in your mind. AI tools can allow us to shortcut the development of these abstractions to our detriment. Skipping learning how to do the “easy stuff” that AI can currently automate may cripple our ability to rapidly learn the “hard stuff” that AI can’t do and that you may be able to get a job in. Learning the basic abstractions will make the path forward easier and eliminate potential roadblocks to understanding and skill development."
+  },
+  {
+    "objectID": "ai.html#responsible-use-of-ai-tools",
+    "href": "ai.html#responsible-use-of-ai-tools",
+    "title": "Effective Use of AI",
+    "section": "Responsible use of AI tools",
+    "text": "Responsible use of AI tools\nWith those challenges outlined, there are several ways in which AI can be helpful:\n\nA learning aid. If you’re not familiar with a concept or need help understanding something and you don’t have easy access to another source of guidance, an AI tool (especially those that provide relevant citations) can be helpful for accelerating the learning process. Don’t let the AI tool do a task for your, but allow the tool to help you connect with the knowledge and resources you need to complete the task and develop new skills (always search for high-quality resources before relying on AI directly).\nA coding aid. For coding, consider AI to be a pair programmer who may have some suggestions to enhance your coding or may be able to provide some templates to work from. DO NOT directly copy and paste code from AI tools. You should fully understand and be capable of reproducing any code segment that you use - if not, you have not learned the material and that is considered plagiarism.\nA brainstorming aid. AI can help you to think through and generate ideas. However, always begin creating ideas on your own first, and use AI after you’ve done some critical thinking on your own to prevent your own creativity and problem solving skills from atrophying.\nA tool for detecting spelling and grammar issues (e.g., Grammarly)\n\nYou should NEVER directly submit work that was created by AI. In this class, the use of AI tools is acceptable WITH CITATION. An appropriate citation would indicate the following information:\n\nWhat AI tool you used (e.g. ChatGPT)\nHow you used it\n\nAt the end of the day you are responsible for the correctness of anything you submit, you are responsible for having a complete understanding and the ability to reproduce from scratch anything that you submit."
+  },
+  {
+    "objectID": "index.html#course-summary",
+    "href": "index.html#course-summary",
+    "title": "Overview",
+    "section": "Course Summary",
+    "text": "Course Summary\nIn almost every field, there is a need to make predictions based on data to drive decisions. The goal of this course is to provide an applied introduction to machine learning that is approachable to diverse disciplines and empowers students to become proficient in the foundational concepts and tools. You will learn to (a) structure a machine learning problems and determine which algorithmic tools are appropriate, (b) evaluate the performance of your solution using field-appropriate metrics and practices, and (c) accurately interpret your model output and communicate your results to interdisciplinary audiences. This course is a fast-paced, applied introduction to machine learning that through extensive practice with foundational tools, helps you to develop your knowledge of foundational machine learning concepts, and provides practical experience with those tools to prepare you for practice or future study.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#detailed-description",
+    "href": "index.html#detailed-description",
+    "title": "Overview",
+    "section": "Detailed description",
+    "text": "Detailed description\nWe learn constantly learn from examples and experiences. We’ve seen enough dark clouds in the sky to know that rain is likely coming. We’ve encountered the worst traffic when we leave at 8:30am so we leave earlier to avoid it. A radiologist has seen enough images of healthy patients to be able to diagnose correctly most of the time. This process of learning from examples or experience is known as inductive reasoning. Machine learning is algorithmically-amplified inductive reasoning.\nThe tools of machine learning help us to understand and make decisions based on data and past experience. This course will begin with exploring the purpose of machine learning told through a discussion of the types of problems that machine learning can answer: describing, predicting, and strategizing based on data and the tools at our disposal to address these challenges: supervised learning including classification and regression; unsupervised learning including clustering and density estimation; and reinforcement learning. There will be a strong focus on how to formulate a machine learning problem. Central to that formulation will be developing an understanding of how to preprocess data for analysis (e.g. feature extraction/dimensionality reduction, training/validation data sampling), model selection, and performance evaluation with cross validation.\nThroughout this course, the focus will be on applying algorithms rather than diving deeply into theory. You will be asked to consider the practical issues of machine learning problem solving: challenges of applying machine learning code packages, striving for parsimony (simplicity of models) and interpretability, and ensuring model assumptions are valid for a given problem and dataset. This course will also stress the importance of team-based collaboration, the value of producing fully reproducible and validated results, and tools to help with both such as version control and code repositories.\nCommunicating your results. Data science solutions are only as impactful as the communicator who shares them: therefore communication of your findings will be a core component of this course. Demonstrating competency in data science means (a) exhibiting a working knowledge of technical concepts including programming, statistics, and mathematics and (b) being able to clearly communicate the problem you were trying to solve or question you were trying to answer, why it matters, and how well your analysis worked. You will have opportunities to practice these skills throughout this course in the context of interpreting and sharing the results of your analyses.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources for further learning",
+    "section": "",
+    "text": "The following online courses on Coursera are a 5-part series on Python programming by Nick Eubank, Kyle Bradbury, Andrew Hilton, and Genevieve Lipp:\n\nPython Programming Fundamentals\nData Science with NumPy, Sets, and Dictionaries\nPandas for Data Science\nDesigning Larger Python Programs for Data Science\nData Visualization and Modeling in Python\n\nThere is also a textbook version of much of this material by Nick Eubank and Kyle Bradbury"
+  },
+  {
+    "objectID": "resources.html#python-programming",
+    "href": "resources.html#python-programming",
+    "title": "Resources for further learning",
+    "section": "",
+    "text": "The following online courses on Coursera are a 5-part series on Python programming by Nick Eubank, Kyle Bradbury, Andrew Hilton, and Genevieve Lipp:\n\nPython Programming Fundamentals\nData Science with NumPy, Sets, and Dictionaries\nPandas for Data Science\nDesigning Larger Python Programs for Data Science\nData Visualization and Modeling in Python\n\nThere is also a textbook version of much of this material by Nick Eubank and Kyle Bradbury"
+  },
+  {
+    "objectID": "resources.html#math-for-machine-learning-calculus-and-linear-algebra",
+    "href": "resources.html#math-for-machine-learning-calculus-and-linear-algebra",
+    "title": "Resources for further learning",
+    "section": "Math for machine learning (calculus and linear algebra)",
+    "text": "Math for machine learning (calculus and linear algebra)\n\nMathematics for Machine Learning by Deisenroth, Faisal, and Ong\nDeep Learning; Part I: Applied Math and Machine Learning Basics by Goodfellow, Bengio, and Courville\nThe Matrix Calculus You Need For Deep Learning by Parr and Howard\nDive Into Deep Learning; Appendix: Mathematics for Deep Learning by Weness, Hu, et al."
+  },
+  {
+    "objectID": "resources.html#introductory-books-for-machine-learning",
+    "href": "resources.html#introductory-books-for-machine-learning",
+    "title": "Resources for further learning",
+    "section": "Introductory books for machine learning",
+    "text": "Introductory books for machine learning\nEach of these are used in one or more course reading assignment in this course:\n\nAn Introduction to Statistical Learning with Python, by James, Witten, Hastie, and Tibshirani\nUnderstanding Deep learning by Simon Prince\nIntroduction to Data Mining, by Tan, Steinbach, Karpatne, and Kumar\nPattern Recognition and Machine Learning, by Bishop\nDeep Learning, by Goodfellow, Bengio, and Courville\nReinforcement Learning: An Introduction: An Introduction, by Sutton and Barto"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Course Logistics",
+    "section": "",
+    "text": "Class Time and Location\n\n\n\n\nWhen: Tuesday and Thursdays 3:05pm - 4:20pm\nWhere: Gross Hall 270"
+  },
+  {
+    "objectID": "syllabus.html#class-tools-and-resources",
+    "href": "syllabus.html#class-tools-and-resources",
+    "title": "Course Logistics",
+    "section": "Class Tools and Resources",
+    "text": "Class Tools and Resources\n\nEd Discussions: Announcements, Q&A on course content (assignments, quizzes, grades), ALL course communications\nGradescope: Quizzes, assignments, and project submission & feedback\nSchedule: Schedule of class topics and deliverables\nCanvas: Posted grades"
+  },
+  {
+    "objectID": "syllabus.html#textbooks",
+    "href": "syllabus.html#textbooks",
+    "title": "Course Logistics",
+    "section": "Textbooks",
+    "text": "Textbooks\nA version of each book is available free online:\n\nAn Introduction to Statistical Learning with Python by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani, 2013.\nUnderstanding Deep learning by Simon Prince, 2023.\nPattern Recognition and Machine Learning by Christopher Bishop, 2006.\nDeep Learning by Ian Goodfellow, Yoshua Bengio, and Aaron Courville, 2016.\nReinforcement Learning: An Introduction, by Richard Sutton and Andrew Barto, 2018."
+  },
+  {
+    "objectID": "syllabus.html#assignments-grading",
+    "href": "syllabus.html#assignments-grading",
+    "title": "Course Logistics",
+    "section": "Assignments & Grading",
+    "text": "Assignments & Grading\nAssignments, projects, & quizzes: Assignments and projects details are posted on the course syllabus. For expectations and instructions on the assignments, see the assignment instructions. Quizzes are found on Gradescope and are due prior to the start of the lecture for which they’re titled (i.e. the Lecture 3 Quiz is due by the start of Lecture 3).\n\nGrading:\n\n40% Assignments\n30% Exams\n20% Quizzes\n10% Final Project\n\n\n\nRecommended Prerequisites\nThis course is meant to be accessible to many across the university, so you may email the instructor if you have specific questions about your preparation. It’s recommended that you have the following proficiencies:\n\nBasic Python Programming\nIntroductory calculus and familiarity with matrix operations\nExposure to probability and/or statistics"
+  },
+  {
+    "objectID": "syllabus.html#course-policies",
+    "href": "syllabus.html#course-policies",
+    "title": "Course Logistics",
+    "section": "Course Policies",
+    "text": "Course Policies\n\nAcademic dishonesty\nAdherence to the Duke Community Standard is expected. To uphold the Duke Community Standard:\nI will not lie, cheat, or steal in my academic endeavors;\nI will conduct myself honorably in all my endeavors; and\nI will act if the Standard is compromised\nAnyone found in violation of the Standard will be reported to the Office of Student Conduct.\n\n\nClass Attendance\nAttending class is a vital component of the course as it is one of the multiple ways in which you will interact with and learn course material. In person class attendance is therefore expected for this course. For any special circumstances, please reach out to the course instructor.\n\n\nSick absences\nTo keep the university community as safe and healthy as possible, please do not come to class if you have cold symptoms. Please inform the instructor of your absence and plan to complete any missed work. Students who encounter short- and long-term medical issues or instances of personal distress or emergency can seek academic support if needed. Recordings of the class will be available for excused absences.\n\n\nAccommodations and accessibility\nIf you need special accommodations due to physical or learning disabilities, medical needs, religious practices, or other reasons, please inform us as soon as possible so we can work to accommodate those needs.\nIf you are a student with a disability and need accommodations for this class, please register with the Student Disability Access Office (SDAO) and provide them with documentation of your disability. SDAO will work with you to determine what accommodations are appropriate for your situation. Please note that accommodations are not retroactive and disability accommodations cannot be provided until a Faculty Accommodation Letter has been given to your instructor. Please contact SDAO for more information: sdao@duke.edu or .\n\n\nLate Submissions\nAssignments and projects are due in class by the start of class on the date posted. Late deliverables will ONLY be accepted at the discretion of the instructor and according to the following:\n\nCourse projects deliverables will not be accepted after the deadline and a grade of 0 will be assigned.\nLate assignment submissions will result in a reduction of 5 points off the grade per day late.\nQuizzes will not be accepted after the deadline since the answers to the quizzes are discussed in and made available after the class in which they’re due. Quizzes are typically posted a week or more in advance, so you are encouraged to start early (you can submit as early as you’d like). Quizzes cannot be made up since we typically go over the quiz answers immediately after in class.\n\nPlease reach out to the TA’s or instructor as early as possible to request any special accommodations.\n\n\nCollaboration\nThere will be three modes of collaboration ranging from fully-collaborative group projects, to fully-independent work. The three modes are as follows, and will be indicated throughout the course:\n\nMode 1: Team-based Assignment. Collaboration is expected with every member of the team contributing to a single deliverable. Applies to the Project\nMode 2: Individual Assignment – Some collaboration is permitted. Students hand in individual work, but they may work with others (at the level of ideas rather than implementation) if they provide citations of the help they received, such as a list of people who assisted/collaborated with them to produce the final product. Duplication or copying is never permissible, even in part, and constitutes a breach of the honor code. This means that all work should in assignments should be your own. Applies to Assignments\nMode 3: Individual Assignment – No collaboration permitted. Students hand in individual work that is completed entirely independent of any discussion or help from other students. Clarifying questions to teaching assistants and instructors are both permissible and encouraged. Applies to Quizzes\n\n\n\nRules for recording course content\nStudent recording recordings of lectures must be permitted by the instructor prior to recording and shall be for private study only. Such recordings shall not be distributed to anyone without authorization by the instructor whose lecture has been recorded. However, the instructor may arrange through the Office of Information Technology to make recorded lectures available to students enrolled in the class on such terms and conditions as he or she prescribes. Redistribution of recorded lectures is prohibited. Unauthorized distribution is a cause for disciplinary action by the Judicial Board. The full policy on recoding of lectures falls under the Duke University Policy on Intellectual Property Rights, available here."
+  },
+  {
+    "objectID": "syllabus.html#mental-health-and-wellness-resources",
+    "href": "syllabus.html#mental-health-and-wellness-resources",
+    "title": "Course Logistics",
+    "section": "Mental Health and Wellness Resources",
+    "text": "Mental Health and Wellness Resources\nStudent mental health and wellness are of primary importance at Duke, and the university offers resources to support students in managing daily stress and self- care.\nIf your mental health concerns or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, many resources are available to help you through difficult times. Duke offers several resources for all students to seek assistance and to nurture daily habits that support overall well-being, some of which are listed below:\n\nDuWell, (919) 681-8421. DuWell provides Moments of Mindfulness (stress management and resilience building) and meditation programming (Koru workshop) to assist students in developing a daily emotional well-being practice. All are welcome and no experience necessary.\nDukeReach. DukeReach provides comprehensive outreach services to identify and support students in managing all aspects of well-being.\nCounseling and Psychological Services (CAPS), (919) 660-1000. CAPS services include individual and group counseling services, psychiatric services, and workshops. CAPS also provides referral to off-campus resources for specialized care. • TimelyCare (formerly known as Blue Devils Care). An online platform that is a convenient, confidential, and free way for Duke students to receive 24/7 mental health support through TalkNow and scheduled counseling."
+  }
+]
