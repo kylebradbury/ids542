@@ -15,7 +15,7 @@ number-sections: false
 ---
 
 :::{.callout-important}
-NEW COURSE THIS SPRING! Open widely across Duke. Note that since this course is in development, this content is subject to change before the start of classes.
+**NEW COURSE FOR SPRING 2027**! Open widely across Duke. Note that since this course is in development, this content is subject to change before the start of classes.
 :::
 
 ## Course Summary
@@ -52,6 +52,14 @@ The tools/techniques that you will encounter include:
 - Validation techniques including held out datasets, cross validation, and bootstrapping; uncertainty estimation; various performance metrics and both Receiver Operating Characteristic and Precision Recall curves
 - Unsupervised learning for clustering, density estimation, and dimensionality reduction
 - ...and much more!
+
+## Recommended Prerequisites
+
+- Some experience coding (preferably Python)
+- Familiarity with calculus and matrix operations
+- Familiarity with basic probability and/or statistics
+
+If you have questions about your specific situation, please reach out to the instructor.
 
 ## Interactive Introduction {#sec-interactive}
 

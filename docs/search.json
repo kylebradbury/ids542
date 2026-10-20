@@ -26,7 +26,7 @@
     "href": "index.html",
     "title": "Overview",
     "section": "",
-    "text": "Important\n\n\n\nThis course is in development and is subject to change before the start of classes",
+    "text": "Important\n\n\n\nNEW COURSE FOR SPRING 2027! Open widely across Duke. Note that since this course is in development, this content is subject to change before the start of classes.",
     "crumbs": [
       "Overview"
     ]
@@ -36,7 +36,7 @@
     "href": "index.html#course-summary",
     "title": "Overview",
     "section": "Course Summary",
-    "text": "Course Summary\nIn almost every field, there is a need to make predictions based on data to drive decisions. The goal of this course is to provide an applied introduction to machine learning that is approachable to diverse disciplines and empowers students to become proficient in the foundational concepts and tools. You will learn to (a) structure machine learning problems and determine which algorithmic tools are appropriate, (b) evaluate the performance of your solution using field-appropriate metrics and practices, and (c) accurately interpret your model output and communicate your results to interdisciplinary audiences. This course is a fast-paced, applied introduction to machine learning that through extensive practice with foundational tools, helps you to develop your knowledge of foundational machine learning concepts, and provides practical experience with those tools to prepare you for practice or future study.\n\n\n\n\n\n\nTip\n\n\n\nCheck out the Section 4 at the bottom for an interactive demo of some of the concepts you’ll encounter in this course",
+    "text": "Course Summary\nIn almost every field, there is a need to make predictions based on data to drive decisions. The goal of this course is to provide an applied introduction to machine learning that is approachable to diverse disciplines and empowers students to become proficient in the foundational concepts and tools. You will learn to (a) structure machine learning problems and determine which algorithmic tools are appropriate, (b) evaluate the performance of your solution using field-appropriate metrics and practices, and (c) accurately interpret your model output and communicate your results to interdisciplinary audiences. This course is a fast-paced, applied introduction to machine learning that through extensive practice with foundational tools, helps you to develop your knowledge of foundational machine learning concepts, and provides practical experience with those tools to prepare you for practice or future study.\n\n\n\n\n\n\nTip\n\n\n\nCheck out the Section 5 at the bottom for an interactive demo of some of the concepts you’ll encounter in this course",
     "crumbs": [
       "Overview"
     ]
@@ -57,6 +57,16 @@
     "title": "Overview",
     "section": "Learning objectives",
     "text": "Learning objectives\nThrough this course, you will learn to…\n\nUse data to make predictions and better decisions\nUnderstand how algorithms learn, predict, and make mistakes\nBuild, train, and improve machine learning models\nCreate robust experimental designs for evaluating model performance and uncertainty\nInterpret model output appropriately and the degree of associated confidence\nDevelop judgement to apply machine learning techniques effectively and responsibly\n\nThe tools/techniques that you will encounter include:\n\nSupervised learning algorithms for classification and regression including linear models, nonparametric models, ensembles, neural networks, and deep learning techniques including transformers and self-supervised approaches\nValidation techniques including held out datasets, cross validation, and bootstrapping; uncertainty estimation; various performance metrics and both Receiver Operating Characteristic and Precision Recall curves\nUnsupervised learning for clustering, density estimation, and dimensionality reduction\n…and much more!",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#recommended-prerequisites",
+    "href": "index.html#recommended-prerequisites",
+    "title": "Overview",
+    "section": "Recommended Prerequisites",
+    "text": "Recommended Prerequisites\n\nSome experience coding (preferably Python)\nFamiliarity with calculus and matrix operations\nFamiliarity with basic probability and/or statistics\n\nIf you have questions about your specific situation, please reach out to the instructor.",
     "crumbs": [
       "Overview"
     ]
