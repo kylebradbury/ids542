@@ -1,0 +1,74 @@
+[
+  {
+    "objectID": "pedagogy.html",
+    "href": "pedagogy.html",
+    "title": "Pedagogy",
+    "section": "",
+    "text": "Tenet #1: Good learning is active learning\nEveryone who was good at something was once bad at it. Learning comes from practice. No amount of reading or video/lecture watching alone will help you to become good without actively engaging with the material through practice. That is why this entire course is focused on supporting you to actively apply machine learning techniques through the assignments, quizzes, and project.\n\n\nTenet #2: Desirable difficulty leads to meaningful learning\nLearning is most effective when there’s a degree of struggle with the material. “Requiring students to organize new information and to work harder in the initial learning period can lead to greater and deeper learning. Although this struggle, dubbed a desirable difficulty…may at first be frustrating to learner and teacher alike, ultimately it improves long-term retention” (Excerpt from A Concise Guide to Improving Student Learning: Six Evidence-Based Principles and How to Apply Them). Desirable difficulties help you build connections between concepts and learn representations of knowledge (meta-cognition) that, like an index of a book, will increase your ability to creatively connect concepts and think more deeply about the topic.\n\n\nTenet #3: Read, reflect, recall is a pattern for effective learning\nSpaced retrieval and reflection is a key to effective learning. When we learn something, if we don’t use it, the knowledge fades. However, if we return to the material, apply it, create with it, we’re increasing the probability of long-term learning. This is why you will interact with each concept typically 4 times: lectures, readings, quizzes, and assignments, and at least one more time for those concepts involved in the final project. An added benefit of the frequent reflection through quizzes is that it tests your knowledge regularly, helping us to avoid the illusion of knowledge (thinking we know something, when we actually do not).\nReferences\nBrown, P.C., Roediger III, H.L. and McDaniel, M.A., 2014. Make it stick: The science of successful learning. Harvard University Press.\nPersellin, D.C. and Daniels, M.B., 2023. A concise guide to improving student learning: Six evidence-based principles and how to apply them. Taylor & Francis.",
+    "crumbs": [
+      "Syllabus",
+      "Pedagogy"
+    ]
+  },
+  {
+    "objectID": "contacts.html",
+    "href": "contacts.html",
+    "title": "Instructional Team",
+    "section": "",
+    "text": "Contact Us & Office Hours\n\n\n\nReach out to us through Ed Discussions for any questions. Office hours are also posted on Ed.\n\n\n\nInstructor\n\n\n\nKyle Bradbury (, )\n\n\nDr. Kyle Bradbury develops and applies machine learning techniques to better understand and manage energy and climate resources. His work focuses on how to advance machine learning methodologies and apply them to solve energy and climate system challenges through the development of open source, widely-applicable computational tools. His current research interests include developing scalable computer vision techniques for assessing energy resources, infrastructure, and access globally through the use of publicly available remote sensing data. Methodologically, he investigates how to overcome the challenge of distribution shift in computer vision through novel training paradigms that require less labeled data.\n\n\nTeaching Assistants\nComing soon!",
+    "crumbs": [
+      "Syllabus",
+      "Instructional Team"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Important\n\n\n\nNEW COURSE THIS SPRING! Open widely across Duke. Note that since this course is in development, this content is subject to change before the start of classes.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-summary",
+    "href": "index.html#course-summary",
+    "title": "Overview",
+    "section": "Course Summary",
+    "text": "Course Summary\nIn almost every field, there is a need to make predictions based on data to drive decisions. The goal of this course is to provide an applied introduction to machine learning that is approachable to diverse disciplines and empowers students to become proficient in the foundational concepts and tools. You will learn to (a) structure machine learning problems and determine which algorithmic tools are appropriate, (b) evaluate the performance of your solution using field-appropriate metrics and practices, and (c) accurately interpret your model output and communicate your results to interdisciplinary audiences. This course is a fast-paced, applied introduction to machine learning that through extensive practice with foundational tools, helps you to develop your knowledge of foundational machine learning concepts, and provides practical experience with those tools to prepare you for practice or future study.\n\n\n\n\n\n\nTip\n\n\n\nCheck out the Section 4 at the bottom for an interactive demo of some of the concepts you’ll encounter in this course",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#detailed-course-description",
+    "href": "index.html#detailed-course-description",
+    "title": "Overview",
+    "section": "Detailed Course Description",
+    "text": "Detailed Course Description\nWe constantly learn from examples and experiences. We’ve seen enough dark clouds in the sky to know that rain is likely coming. We’ve encountered the worst traffic when we leave at 8:30am so we leave earlier to avoid it. A radiologist has seen enough images of healthy patients to be able to diagnose correctly most of the time. This process of learning from examples or experience is known as inductive reasoning. Machine learning is algorithmically-amplified inductive reasoning.\nThe tools of machine learning help us to understand and make decisions based on data and past experience. This course will begin with exploring the purpose of machine learning told through a discussion of the types of problems that machine learning can answer: describing, predicting, and strategizing based on data and the tools at our disposal to address these challenges: supervised learning including classification and regression; unsupervised learning including clustering and density estimation; and reinforcement learning. There will be a strong focus on how to formulate a machine learning problem. Central to that formulation will be developing an understanding of how to preprocess data for analysis (e.g. feature extraction/dimensionality reduction, training/validation data sampling), model selection, and performance evaluation with cross validation.\nThroughout this course, the focus will be on applying algorithms rather than diving deeply into theory. You will be asked to consider the practical issues of machine learning problem solving: challenges of applying machine learning code packages, striving for parsimony (simplicity of models) and interpretability, and ensuring model assumptions are valid for a given problem and dataset. This course will also stress the importance of team-based collaboration, the value of producing fully reproducible and validated results, and tools to help with both such as version control and code repositories.\nCommunicating your results. Data science solutions are only as impactful as the communicator who shares them: therefore communication of your findings will be a core component of this course. Demonstrating competency in data science means (a) exhibiting a working knowledge of technical concepts including programming, statistics, and mathematics and (b) being able to clearly communicate the problem you were trying to solve or question you were trying to answer, why it matters, and how well your analysis worked. You will have opportunities to practice these skills throughout this course in the context of interpreting and sharing the results of your analyses.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Overview",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nThrough this course, you will learn to…\n\nUse data to make predictions and better decisions\nUnderstand how algorithms learn, predict, and make mistakes\nBuild, train, and improve machine learning models\nCreate robust experimental designs for evaluating model performance and uncertainty\nInterpret model output appropriately and the degree of associated confidence\nDevelop judgement to apply machine learning techniques effectively and responsibly\n\nThe tools/techniques that you will encounter include:\n\nSupervised learning algorithms for classification and regression including linear models, nonparametric models, ensembles, neural networks, and deep learning techniques including transformers and self-supervised approaches\nValidation techniques including held out datasets, cross validation, and bootstrapping; uncertainty estimation; various performance metrics and both Receiver Operating Characteristic and Precision Recall curves\nUnsupervised learning for clustering, density estimation, and dimensionality reduction\n…and much more!",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#sec-interactive",
+    "href": "index.html#sec-interactive",
+    "title": "Overview",
+    "section": "Interactive Introduction",
+    "text": "Interactive Introduction\nMachine learning can be many things to many people. Machine learning includes predicting whether or not it will rain, estimating the price of gold, diagnosing a patient, determining the optimal strategy for operating a power plant, automatically identifying all the buildings in a satellite image, and many more. Before launching into a detailed description of the course, consider the example below showing two classes and you want to use the training points to tell them apart (green from black dots) based on the training data. They are plotted based on their features (i.e., characteristics of a sample) which are the x and y value sin the plot. In a classification problem like this, we often want to establish a decision boundary to determine which class a sample belongs to. Notice how the decision boundary between the classes can vary based on how the problem is modeled, (the training data, the model, etc.) leading to vastly different and potentially variable performance (as evaluated on the test data). Through this course you’ll learn how setup problems like this, identify useful representations of the data (the features or their transform) apply algorithmic tools and understand how they work, and the potential modeling pitfalls that you’re likely to encounter and how best to avoid them.\n\n\n\n\n\n\n  Try it yourself: each shaded region is the model's prediction. Vary the level of noise on the data, try the slider for each model's configuration and compare the training and test accuracy. You can even click the plot to add training points (selecting which class you want to add first).\n  \n    \n    \n      \n      \n        Feature x₂\n        \n        Feature x₁\n      \n      \n        Training accuracy: — · Test accuracy: —\n      \n    \n    \n    \n      \n        Dataset\n        \n          Blobs\n          Moons\n          Circles\n          XOR\n        \n        Noise\n          \n        \n        \n          New training sample\n          New test sample\n        \n      \n      \n        Model\n        \n          k-Nearest Neighbors\n          Decision tree\n          Logistic regression\n        \n        \n        Neighbors k: 1\n          \n        \n        \n      \n      \n        Your points\n        \n          Add class A\n          Add class B\n        \n        Clear points\n         Show test points (hollow)",
+    "crumbs": [
+      "Overview"
+    ]
+  }
+]
