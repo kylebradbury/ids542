@@ -14,8 +14,6 @@ toc: true
 number-sections: false
 ---
 
-![](img/decision-boundaries.png){fig-alt="Three panels comparing classifiers on the same two-class dataset: the Bayes decision boundary, a linear classifier, and a decision tree."}
-
 :::{.callout-important}
 This course is in development and is subject to change before the start of classes
 :::
@@ -24,7 +22,13 @@ This course is in development and is subject to change before the start of class
 
 In almost every field, there is a need to make predictions based on data to drive decisions. The goal of this course is to provide an applied introduction to machine learning that is approachable to diverse disciplines and empowers students to become proficient in the foundational concepts and tools. You will learn to (a) structure machine learning problems and determine which algorithmic tools are appropriate, (b) evaluate the performance of your solution using field-appropriate metrics and practices, and (c) accurately interpret your model output and communicate your results to interdisciplinary audiences. This course is a fast-paced, applied introduction to machine learning that through extensive practice with foundational tools, helps you to develop your knowledge of foundational machine learning concepts, and provides practical experience with those tools to prepare you for practice or future study.
 
-## Detailed description
+## Interactive Demo
+
+Consider the example below showing two features being plotted for a classification problem and how the decision boundary between the classes can vary based on how the problem is modeled leading to vastly different and potentially variable performance. Through this course you'll learn how important learned representations are to machine learning, how each of these classifiers and many more work and their strengths, and the potential modeling pitfalls and how to avoid them.
+
+{{< include _ml-demo.qmd >}}
+
+## Detailed course description
 
 We constantly learn from examples and experiences. We've seen enough dark clouds in the sky to know that rain is likely coming. We've encountered the worst traffic when we leave at 8:30am so we leave earlier to avoid it. A radiologist has seen enough images of healthy patients to be able to diagnose correctly most of the time. This process of learning from examples or experience is known as inductive reasoning. **Machine learning is algorithmically-amplified inductive reasoning**.
 
