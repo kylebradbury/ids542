@@ -28,7 +28,7 @@
        data-out     text the script writes (accuracies, slider label, hint)
        data-action  a one-shot button (new samples, clear points) -->
 <div id="ml-demo" hidden>
-  <p class="mld-caption"><strong>Try it yourself:</strong> each shaded region is the model's guess. Click the plot to add points, then move the slider and compare training vs. test accuracy.</p>
+  <p class="mld-caption"><strong>Try it yourself:</strong> each shaded region is the model's prediction. Vary the level of noise on the data, try the slider for each model's configuration and compare the training and test accuracy. You can even click the plot to add training points (selecting which class you want to add first).</p>
   <div class="mld-layout">
     <!-- Left (or top on phones): the plot and the accuracy readout -->
     <div class="mld-plot">

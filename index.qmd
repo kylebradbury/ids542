@@ -22,13 +22,11 @@ This course is in development and is subject to change before the start of class
 
 In almost every field, there is a need to make predictions based on data to drive decisions. The goal of this course is to provide an applied introduction to machine learning that is approachable to diverse disciplines and empowers students to become proficient in the foundational concepts and tools. You will learn to (a) structure machine learning problems and determine which algorithmic tools are appropriate, (b) evaluate the performance of your solution using field-appropriate metrics and practices, and (c) accurately interpret your model output and communicate your results to interdisciplinary audiences. This course is a fast-paced, applied introduction to machine learning that through extensive practice with foundational tools, helps you to develop your knowledge of foundational machine learning concepts, and provides practical experience with those tools to prepare you for practice or future study.
 
-## Interactive Demo
+:::{.callout-tip}
+Check out the @sec-interactive at the bottom for an interactive demo of some of the concepts you'll encounter in this course
+:::
 
-Consider the example below showing two features being plotted for a classification problem and how the decision boundary between the classes can vary based on how the problem is modeled leading to vastly different and potentially variable performance. Through this course you'll learn how important learned representations are to machine learning, how each of these classifiers and many more work and their strengths, and the potential modeling pitfalls and how to avoid them.
-
-{{< include _ml-demo.qmd >}}
-
-## Detailed course description
+## Detailed Course Description
 
 We constantly learn from examples and experiences. We've seen enough dark clouds in the sky to know that rain is likely coming. We've encountered the worst traffic when we leave at 8:30am so we leave earlier to avoid it. A radiologist has seen enough images of healthy patients to be able to diagnose correctly most of the time. This process of learning from examples or experience is known as inductive reasoning. **Machine learning is algorithmically-amplified inductive reasoning**.
 
@@ -37,3 +35,26 @@ The tools of machine learning help us to understand and make decisions based on 
 Throughout this course, the focus will be on applying algorithms rather than diving deeply into theory. You will be asked to consider the practical issues of machine learning problem solving: challenges of applying machine learning code packages, striving for parsimony (simplicity of models) and interpretability, and ensuring model assumptions are valid for a given problem and dataset. This course will also stress the importance of team-based collaboration, the value of producing fully reproducible and validated results, and tools to help with both such as version control and code repositories.
 
 **Communicating your results**. Data science solutions are only as impactful as the communicator who shares them: therefore communication of your findings will be a core component of this course. Demonstrating competency in data science means (a) exhibiting a working knowledge of technical concepts including programming, statistics, and mathematics and (b) being able to clearly communicate the problem you were trying to solve or question you were trying to answer, why it matters, and how well your analysis worked. You will have opportunities to practice these skills throughout this course in the context of interpreting and sharing the results of your analyses.
+
+## Learning objectives
+Through this course, you will learn to...
+
+- Use data to make predictions and better decisions
+- Understand how algorithms learn, predict, and make mistakes
+- Build, train, and improve machine learning models
+- Create robust experimental designs for evaluating model performance and uncertainty
+- Interpret model output appropriately and the degree of associated confidence
+- Develop judgement to apply machine learning techniques effectively and responsibly
+
+The tools/techniques that you will encounter include:
+
+- Supervised learning algorithms for classification and regression including linear models, nonparametric models, ensembles, neural networks, and deep learning techniques including transformers and self-supervised approaches
+- Validation techniques including held out datasets, cross validation, and bootstrapping; uncertainty estimation; various performance metrics and both Receiver Operating Characteristic and Precision Recall curves
+- Unsupervised learning for clustering, density estimation, and dimensionality reduction
+- ...and much more!
+
+## Interactive Introduction {#sec-interactive}
+
+Machine learning can be many things to many people. Machine learning includes predicting whether or not it will rain, estimating the price of gold, diagnosing a patient, determining the optimal strategy for operating a power plant, automatically identifying all the buildings in a satellite image, and many more. Before launching into a detailed description of the course, consider the example below showing two classes and you want to use the training points to tell them apart (green from black dots) based on the training data. They are plotted based on their features (i.e., characteristics of a sample) which are the x and y value sin the plot. In a classification problem like this, we often want to establish a decision boundary to determine which class a sample belongs to. Notice how the decision boundary between the classes can vary based on how the problem is modeled, (the training data, the model, etc.) leading to vastly different and potentially variable performance (as evaluated on the test data). Through this course you'll learn how setup problems like this, identify useful representations of the data (the features or their transform) apply algorithmic tools and understand how they work, and the potential modeling pitfalls that you're likely to encounter and how best to avoid them.
+
+{{< include _ml-demo.qmd >}}
