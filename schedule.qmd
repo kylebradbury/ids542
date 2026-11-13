@@ -1,0 +1,313 @@
+---
+title: Schedule
+subtitle: Spring 2027
+# DRAFT: left out of the published site (draft-mode: gone in _quarto.yml), but
+# visible in `quarto preview`. To publish it:
+#   1. delete the `draft: true` line below,
+#   2. uncomment `- schedule.qmd` in the sidebar and the Schedule navbar link in _quarto.yml,
+#   3. add the Schedule link in 404.qmd.
+draft: true
+# Search/link-preview description (not shown on the page)
+description-meta: "Lecture topics, readings, deadlines, and course materials for IDS 542: Applied Machine Learning at Duke University (Spring 2027)."
+open-graph:
+  description: "Lecture topics, readings, deadlines, and course materials for IDS 542: Applied Machine Learning at Duke University (Spring 2027)."
+twitter-card:
+  description: "Lecture topics, readings, deadlines, and course materials for IDS 542: Applied Machine Learning at Duke University (Spring 2027)."
+toc: false
+number-sections: false
+html-table-processing: none
+---
+
+The schedule below is a guide to what we will be covering throughout the semester and is subject to change to meet the learning goals of the class. Check this website regularly for the latest schedule and for course materials that will be posted here through links on the schedule.
+
+::: {.callout-tip collapse="true"}
+## Key to Books Used Below
+
+- ISL = [**An Introduction to Statistical Learning with Python**](https://www.statlearning.com/), by James, Witten, Hastie, Tibshirani, and Taylor
+- UDL = [**Understanding Deep Learning**](https://udlbook.github.io/udlbook/) by Simon Prince
+- PRML = [**Pattern Recognition and Machine Learning**](https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/), by Bishop
+- DL = [**Deep Learning**](https://www.deeplearningbook.org/), by Goodfellow, Bengio, and Courville
+- RL = [**Reinforcement Learning: An Introduction**](http://incompleteideas.net/book/the-book-2nd.html), by Sutton and Barto
+:::
+
+```{=html}
+<!--
+  HOW TO EDIT: each row has 5 cells: Date | Event | Topic | Readings | Materials.
+  Leave unused cells as <td></td> (nothing inside) so they are hidden on phones.
+
+  STARTING POINT: the rows below are every Tuesday/Thursday class meeting of Spring 2027
+  (Jan 7 to Apr 13, skipping spring break), numbered in order, plus the holiday and break rows.
+  The dates match the IDS 705 schedule. Fill in each TBD, change "Lecture N" to a tag for
+  exam days, add deadline and module rows, and delete any meetings that won't happen.
+
+  Lecture:   <td>Tue, Jan 12</td> <td>Lecture 2</td> <td><b>Title</b><br>Description</td> <td>ISL 2.2</td> <td><a href="...">Slides</a></td>
+  Tags (go in the Event cell; the row is colored to match):
+             <span class="due">Due 9pm</span>     orange, for deadlines
+             <span class="exam">Exam</span>       red
+             <span class="tag">No class</span>    gray, for holidays/breaks/cancellations (also "No quiz" in Readings)
+  Red note:  <span class="note">This meeting will be virtual</span>
+  Moved date: <td>Fri, Mar 6 <s>Wed, Mar 4</s></td>
+  Module:    <tr class="module"><td colspan="5">Module 1: Supervised Learning</td></tr>
+  Materials: plain links. The icon is picked from the link address (see styles.css):
+             lecture PDFs = slides, other PDFs, .ipynb = code, assignment/project pages,
+             Gradescope = submit, Warpwire/YouTube = video, anything else = link.
+  Not posted yet: add class="pending" to hide a link until it's ready, e.g.
+             <a class="pending" href="...">Slides</a>   (delete class="pending" to show it)
+
+  Deadline row (copy as needed):
+  <tr>
+    <td>Wed, Jan 20</td>
+    <td><span class="due">Due 9pm</span></td>
+    <td><b>Assignment #1</b><br>Description</td>
+    <td></td>
+    <td><a class="pending" href="https://kylebradbury.github.io/ids542/notebooks/assignment1.html">Assignment</a>
+      <a class="pending" href="https://www.gradescope.com/">Submit</a></td>
+  </tr>
+-->
+<table class="table table-hover schedule">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Event</th>
+      <th>Topic</th>
+      <th>Readings</th>
+      <th>Materials</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <tr>
+    <td>Thu, Jan 7</td>
+    <td>Lecture 1</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Jan 12</td>
+    <td>Lecture 2</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Jan 14</td>
+    <td>Lecture 3</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Mon, Jan 18</td>
+    <td><span class="tag">Holiday</span></td>
+    <td><b>Martin Luther King Jr. Day</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Jan 19</td>
+    <td>Lecture 4</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Jan 21</td>
+    <td>Lecture 5</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Jan 26</td>
+    <td>Lecture 6</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Jan 28</td>
+    <td>Lecture 7</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Feb 2</td>
+    <td>Lecture 8</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Feb 4</td>
+    <td>Lecture 9</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Feb 9</td>
+    <td>Lecture 10</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Feb 11</td>
+    <td>Lecture 11</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Feb 16</td>
+    <td>Lecture 12</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Feb 18</td>
+    <td>Lecture 13</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Feb 23</td>
+    <td>Lecture 14</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Feb 25</td>
+    <td>Lecture 15</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Mar 2</td>
+    <td>Lecture 16</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Mar 4</td>
+    <td>Lecture 17</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Mar 6-14</td>
+    <td><span class="tag">No class</span></td>
+    <td><b>Spring Break Week</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Mar 16</td>
+    <td>Lecture 18</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Mar 18</td>
+    <td>Lecture 19</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Mar 23</td>
+    <td>Lecture 20</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Mar 25</td>
+    <td>Lecture 21</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Mar 30</td>
+    <td>Lecture 22</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Apr 1</td>
+    <td>Lecture 23</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Apr 6</td>
+    <td>Lecture 24</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Thu, Apr 8</td>
+    <td>Lecture 25</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Tue, Apr 13</td>
+    <td>Lecture 26</td>
+    <td><b>TBD</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Apr 15-25</td>
+    <td><span class="tag">No class</span></td>
+    <td><b>Graduate Reading Period</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  </tbody>
+</table>
+```

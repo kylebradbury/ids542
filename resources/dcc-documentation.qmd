@@ -175,7 +175,7 @@ Location: `ids_705_storage/demo/gpu_demo.ipynb`.
 
 
 
-## GPU Demonstration Using Slurm Scheduler (Preferred method to run longer jobs)
+## GPU Demonstration Using Slurm Scheduler (Preferred Method to Run Longer Jobs)
 Slurm (Simple Linux Utility for Resource Management) is a powerful workload manager and job scheduler designed for high-performance computing (HPC) clusters. It enables efficient resource allocation by managing compute nodes, CPUs, GPUs, memory, and job priorities across multiple users.
 
 In this tutorial, we’ll focus on using Slurm to submit GPU jobs to Duke’s Compute Cluster (DCC). You'll learn how to create and submit job scripts, specify resources like GPUs, CPUs, and memory.

@@ -1,0 +1,16 @@
+---
+title: Page Not Found
+search: false
+toc: false
+number-sections: false
+---
+
+Sorry, the page you're looking for isn't here.
+
+IDS 542 is a new course for Spring 2027. Course materials (the schedule, assignments, and lecture slides) will be added as they're ready, so the page you're looking for may not be posted yet.
+
+<!-- Once schedule.qmd is published (its `draft: true` line removed), add it here:
+- [Schedule](schedule.qmd): topics, readings, deadlines, and materials
+-->
+- [Overview](index.qmd): course summary
+- [Instructional Team](contacts.qmd): who's teaching the course and how to reach us

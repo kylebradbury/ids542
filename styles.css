@@ -1,63 +1,154 @@
 /* css styles */
-.module {
-    font-size: 18px;
-    background: darkgray;
-    color: white;
+
+/* ===================== Colors for the custom styles below =====================
+   Light-mode values first; dark-mode values in the second block (Quarto adds
+   the class "quarto-dark" to <body> in dark mode). Site-wide colors such as
+   links, the navbar, and callouts live in theme-light.scss / theme-dark.scss.
+   See STYLE_GUIDE.md.                                                          */
+:root {
+  --sched-module-bg:   #495057;  /* module rows (choice C1: dark gray bar) */
+  --sched-module-fg:   #ffffff;
+  --sched-module-edge: none;     /* optional left edge on module rows, e.g. 4px solid #4CBB17 */
+  --sched-due-row:   #fdf4ea;  /* row behind a "Due" tag */
+  --sched-due-bg:    #f6d8b8;  /* the "Due" tag itself */
+  --sched-due-fg:    #6b3a00;
+  --sched-exam-row:  #fbeaec;
+  --sched-exam-bg:   #f5c2c7;
+  --sched-exam-fg:   #842029;
+  --sched-tag-bg:    #e9ecef;  /* gray tags: Holiday, No class, No quiz */
+  --sched-tag-fg:    #495057;
+  --sched-note:      #b02a37;  /* red notes */
+}
+body.quarto-dark {
+  --sched-module-bg: #3b4247;
+  --sched-module-fg: #ffffff;
+  --sched-due-row:   #2e2416;
+  --sched-due-bg:    #5a3d17;
+  --sched-due-fg:    #f6d8b8;
+  --sched-exam-row:  #33191d;
+  --sched-exam-bg:   #6a1f28;
+  --sched-exam-fg:   #f5c2c7;
+  --sched-tag-bg:    #2c332b;
+  --sched-tag-fg:    #c3cbbf;
+  --sched-note:      #ff8a95;
+}
+
+/* ===================== Schedule table (schedule.qmd) =====================
+   Columns: 1 Date | 2 Event | 3 Topic | 4 Readings | 5 Materials          */
+
+.schedule th {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--bs-secondary-color);
+  font-weight: 600;
+}
+table.schedule > tbody > tr > td { background-color: transparent; }  /* let row colors show */
+
+/* Date: bold. A struck-out old date shows small underneath */
+.schedule td:nth-child(1) { font-weight: 600; white-space: nowrap; }
+.schedule td:nth-child(1) s { display: block; font-weight: 400; font-size: .8rem; color: var(--bs-secondary-color); }
+
+/* Event: "Lecture 3" in small gray text */
+.schedule td:nth-child(2) { font-size: .85rem; color: var(--bs-secondary-color); white-space: nowrap; }
+
+/* Topic: bold title, smaller gray description */
+.schedule td:nth-child(3)   { font-size: .9rem; color: var(--bs-secondary-color); }
+.schedule td:nth-child(3) b { font-size: 1rem; color: var(--bs-body-color); }
+.schedule td:nth-child(3) ul { margin: .25rem 0 0; }
+
+/* Column widths: Date, Event, and Materials shrink to fit; Topic gets the rest */
+.schedule th:nth-child(1), .schedule th:nth-child(2), .schedule th:nth-child(5) { width: 1%; }
+.schedule th:nth-child(4) { width: 22%; }
+
+/* Tags: <span class="due">, <span class="exam">, <span class="tag"> */
+.schedule .due, .schedule .exam, .schedule .tag {
+  display: inline-block;
+  padding: 0 .45rem;
+  border-radius: .25rem;
+  font-size: .8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.schedule .due  { background: var(--sched-due-bg);  color: var(--sched-due-fg); }
+.schedule .exam { background: var(--sched-exam-bg); color: var(--sched-exam-fg); }
+.schedule .tag  { background: var(--sched-tag-bg);  color: var(--sched-tag-fg); }
+
+/* Rows are colored automatically from the tag in their Event cell */
+.schedule tr:has(> td:nth-child(2) .due)  { background: var(--sched-due-row); }
+.schedule tr:has(> td:nth-child(2) .exam) { background: var(--sched-exam-row); }
+.schedule tr:has(> td:nth-child(2) .tag),
+.schedule tr:has(> td:nth-child(2) .tag) b { color: var(--bs-secondary-color); }
+
+/* Red note: <span class="note"> */
+.schedule .note { color: var(--sched-note); font-weight: 600; }
+.schedule .note::before { font-family: "bootstrap-icons"; content: "\f33b"; margin-right: .3rem; font-weight: normal; }
+
+/* Module rows: <tr class="module"><td colspan="5">...</td></tr> */
+table.schedule > tbody > tr.module > td {
+  background: var(--sched-module-bg);
+  color: var(--sched-module-fg);
+  border-left: var(--sched-module-edge);
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: normal;
+}
+
+/* Materials: one link per line, with an icon picked from the link address */
+.schedule td:nth-child(5) a { display: block; white-space: nowrap; text-decoration: none; }
+.schedule td:nth-child(5) br { display: none; }
+.schedule td:nth-child(5) a::before {
+  display: inline-block;
+  font-family: "bootstrap-icons";
+  font-weight: normal;
+  line-height: 1;
+  vertical-align: -.125em;
+  margin-right: .35rem;
+  content: "\f470";                                                /* any other link */
+}
+.schedule td:nth-child(5) a[href$=".pdf"]::before          { content: "\f63e"; }  /* PDF */
+.schedule td:nth-child(5) a[href*="/lectures/"]::before    { content: "\f387"; }  /* lecture slides */
+.schedule td:nth-child(5) a[href$=".ipynb"]::before        { content: "\f2c6"; }  /* code */
+.schedule td:nth-child(5) a[href*="/assignment"]::before,
+.schedule td:nth-child(5) a[href*="/project.html"]::before { content: "\f444"; }  /* assignment / project page */
+.schedule td:nth-child(5) a[href*="gradescope"]::before    { content: "\f603"; }  /* submit */
+.schedule td:nth-child(5) a[href*="warpwire"]::before,
+.schedule td:nth-child(5) a[href*="youtube"]::before       { content: "\f4f1"; }  /* video */
+
+/* Not posted yet: <a class="pending" href="...">. Delete the class to show the link */
+table.schedule td a.pending { display: none; }  /* more specific than the Materials link rules */
+
+/* Phones: each row becomes a card */
+@media (max-width: 767.98px) {
+  .schedule, .schedule tbody, .schedule tr, .schedule td { display: block; }
+  .schedule thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .schedule tr {
+    border: 1px solid var(--bs-border-color);
+    border-radius: .5rem;
+    margin-bottom: .6rem;
+    padding: .45rem 0;
   }
+  table.schedule > tbody > tr > td { border: 0; padding: .1rem .75rem; }
 
-  .table-primary {
-    background: rgb(218, 233, 250);
-    /* color: white; */
-  }
+  /* Date and event on one line */
+  .schedule td:nth-child(1), .schedule td:nth-child(2) { display: inline-block; }
+  table.schedule > tbody > tr > td:nth-child(2) { padding-left: 0; }
+  .schedule td:nth-child(1) s { display: inline; margin-left: .3rem; }
 
-  .table-warning {
-    background: rgb(247, 226, 214);
-    /* color: white; */
-  }
-
-
-/* Fix the schedule table so that it is readable in smaller settings.
-   Only applies to tables inside a `::: {.schedule}` div. */
-@media
-only screen and (max-width: 600px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-  /* Force table to not be like tables anymore */
-  .schedule table, .schedule thead, .schedule tbody,
-  .schedule th, .schedule td, .schedule tr {
+  .schedule td:nth-child(4)::before {
+    content: "Readings";
     display: block;
+    margin-top: .3rem;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--bs-secondary-color);
   }
+  .schedule td:nth-child(5) { margin-top: .3rem; }
+  .schedule td:nth-child(5) a { display: inline-block; margin-right: .9rem; }
 
-  /* Hide table headers (but not display: none;, for accessibility) */
-  .schedule thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
+  .schedule tr.module { border: 0; padding: 0; }
+  table.schedule > tbody > tr.module > td { display: block; border-radius: .5rem; padding: .5rem .75rem; }
 
-  /*.schedule tr { border: 1px solid #ccc; }*/
-
-  .schedule td {
-    /* Behave  like a "row" */
-    border: none;
-    /*border-bottom: 1px solid #eee; */
-    position: relative;
-    padding-left: 50%;
-  }
-
-  .schedule .lecnum {
-    font-weight: bold;
-  }
-
-  .schedule td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-
+  table.schedule > tbody > tr > td:empty { display: none; }  /* keep last: hides blank cells */
 }

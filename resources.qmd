@@ -1,7 +1,6 @@
 ---
-title: Resources for further learning
+title: Resources for Further Learning
 draft: true
-# subtitle: IDS 542 Applied Machine Learning
 toc: true
 toc-expand: 2
 number-sections: false
@@ -18,13 +17,13 @@ The following online courses on Coursera are a 5-part series on Python programmi
 
 There is also a [textbook version](https://www.practicaldatascience.org/intro.html) of much of this material by Nick Eubank and Kyle Bradbury
 
-## Math for machine learning (calculus and linear algebra)
+## Math for Machine Learning (Calculus and Linear Algebra)
 - [Mathematics for Machine Learning](https://mml-book.github.io/book/mml-book.pdf) by Deisenroth, Faisal, and Ong
 - [Deep Learning](https://www.deeplearningbook.org/); Part I: Applied Math and Machine Learning Basics by Goodfellow, Bengio, and Courville
 - [The Matrix Calculus You Need For Deep Learning](https://arxiv.org/pdf/1802.01528.pdf) by Parr and Howard
 - [Dive Into Deep Learning](https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/index.html); Appendix: Mathematics for Deep Learning by Werness, Hu, et al.
 
-## Introductory books for machine learning
+## Introductory Books for Machine Learning
 
 Each of these is used in one or more reading assignments in this course:
 

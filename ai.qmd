@@ -1,13 +1,12 @@
 ---
 title: Effective Use of AI
 draft: true
-# subtitle: IDS 542 Applied Machine Learning
 toc: true
 toc-expand: 3
 number-sections: false
 ---
 
-## The Challenges of AI use
+## The Challenges of AI Use
 
 This class is all about artificial intelligence, however, the primary intelligence that we are working to expand is *your own*. AI tools, like ChatGPT, can be useful aids for learning, but without considering your relationship with these tools, they can present several major challenges to your learning:
 
@@ -22,11 +21,11 @@ For more on this topic, see [this presentation on the science of learning and ho
 
 
 
-## Why do I need to learn material if anyone can get the answer with AI?
+## Why Do I Need to Learn Material If Anyone Can Get the Answer with AI?
 
 Learning the basics helps us to build out abstractions in our minds. For example, when I talk about a "computer" you know what I'm saying, comprehension doesn't require me to explicitly state that I'm talking about "an electronic device for storing and processing data, typically in binary form, according to instructions given to it in a variable program." This is because you've already learned what a computer is - you've developed that abstraction in your mind. AI tools can allow us to shortcut the development of these abstractions to our detriment. Skipping learning how to do the "easy stuff" that AI can currently automate may cripple our ability to rapidly learn the "hard stuff" that AI can't do and that you may be able to get a job in. Learning the basic abstractions will make the path forward easier and eliminate potential roadblocks to understanding and skill development.
 
-## Responsible use of AI tools
+## Responsible Use of AI Tools
 
 With those challenges outlined, there are several ways in which AI can be helpful:
 

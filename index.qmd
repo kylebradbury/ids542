@@ -1,6 +1,12 @@
 ---
 title: Overview
-subtitle: IDS 542 Applied Machine Learning
+subtitle: Spring 2027
+# Search/link-preview description (not shown on the page)
+description-meta: "Course website for IDS 542, Applied Machine Learning, at Duke University (Spring 2027): a fast-paced, applied introduction to machine learning for students in any discipline."
+open-graph:
+  description: "Course website for IDS 542, Applied Machine Learning, at Duke University (Spring 2027): a fast-paced, applied introduction to machine learning for students in any discipline."
+twitter-card:
+  description: "Course website for IDS 542, Applied Machine Learning, at Duke University (Spring 2027): a fast-paced, applied introduction to machine learning for students in any discipline."
 author:
     - name: Kyle Bradbury
       email: kyle.bradbury@duke.edu
@@ -18,13 +24,11 @@ number-sections: false
 **NEW COURSE FOR SPRING 2027**! Open widely across Duke. Note that since this course is in development, this content is subject to change before the start of classes.
 :::
 
+{{< include _ml-demo.qmd >}}
+
 ## Course Summary
 
 In almost every field, there is a need to make predictions based on data to drive decisions. The goal of this course is to provide an applied introduction to machine learning that is approachable to diverse disciplines and empowers students to become proficient in the foundational concepts and tools. You will learn to (a) structure machine learning problems and determine which algorithmic tools are appropriate, (b) evaluate the performance of your solution using field-appropriate metrics and practices, and (c) accurately interpret your model output and communicate your results to interdisciplinary audiences. This course is a fast-paced, applied introduction to machine learning that through extensive practice with foundational tools, helps you to develop your knowledge of foundational machine learning concepts, and provides practical experience with those tools to prepare you for practice or future study.
-
-:::{.callout-tip}
-Check out the @sec-interactive at the bottom for an interactive demo of some of the concepts you'll encounter in this course
-:::
 
 ## Detailed Course Description
 
@@ -36,7 +40,7 @@ Throughout this course, the focus will be on applying algorithms rather than div
 
 **Communicating your results**. Data science solutions are only as impactful as the communicator who shares them: therefore communication of your findings will be a core component of this course. Demonstrating competency in data science means (a) exhibiting a working knowledge of technical concepts including programming, statistics, and mathematics and (b) being able to clearly communicate the problem you were trying to solve or question you were trying to answer, why it matters, and how well your analysis worked. You will have opportunities to practice these skills throughout this course in the context of interpreting and sharing the results of your analyses.
 
-## Learning objectives
+## Learning Objectives
 Through this course, you will learn to...
 
 - Use data to make predictions and better decisions
@@ -60,9 +64,3 @@ The tools/techniques that you will encounter include:
 - Familiarity with basic probability and/or statistics
 
 If you have questions about your specific situation, please reach out to the instructor.
-
-## Interactive Introduction {#sec-interactive}
-
-Machine learning can be used to predict whether or not it will rain, estimate the price of gold, diagnose a patient, determine the optimal strategy for operating a power plant, automatically identify all the buildings in a satellite image, and much more. As a mini example, consider the scenarios below showing two classes. Imagine you want to use the training points to develop a classifier to determine between these two categories automaticall (green from black dots). They are plotted based on their features (i.e., characteristics of a sample) which are the x and y values in the plot. In a classification problem like this, we often want to establish a decision boundary to determine which class a sample belongs to. Notice how the decision boundary between the classes can vary based on how the problem is modeled, (the training data, the model, etc.) leading to vastly different and potentially variable performance (as evaluated on the test data). Through this course you'll learn how setup problems like this, identify useful representations of the data (the features or their transform) apply algorithmic tools and understand how they work, and the potential modeling pitfalls that you're likely to encounter and how best to avoid them.
-
-{{< include _ml-demo.qmd >}}
